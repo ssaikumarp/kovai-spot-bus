@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Kovai Spot Bus</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div>
+    <div id="container">
+	<div id="header">
+    	<h1><a href="/">Kovai Spot Bus </a></h1>
+        
+        <div class="clear"></div>
+    </div>
+    <div id="nav">
+    	<ul>
+        	<li><a href="Adminhome.aspx">Admin Home</a></li>
+        	 <li><a href="Addroute.aspx">Add Route</a></li>
+            <li><a href="citybus.aspx">Add Bus Details</a></li>
+             <li><a href="Addlocation.aspx">Add Location</a></li>
+               <li><a href="Search.aspx">Search</a></li>
+            <li><a href="Home.aspx">Logout</a></li>
+        </ul>
+    </div>
+    <div id="body">
+		<div id="content">
+		<h2>City bus</h2>
+            <p>
+            <img src="Images/images1.jpeg" height="120" width="200" />
+             <img src="Images/DSC05326.jpg"height="120" width="200" />
+              <img src="Images/1782.jpg" height="120" width="200" />
+            </p>	
+            
+               
+         
+
+
+
+          
+
+ 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+
+
+          
+ 
+<marquee behavior=alternate><p>  <img src="Images/1782.jpg" height="120" width="200" /></p></marquee>
+     </div>   
+        
+        <div class="sidebar">
+            <ul>	
+               <li>
+                    <h4><span>Navigate</span></h4>
+                    <ul class="blocklist">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        
+                        <li><a href="#">Admin</a></li>
+                       
+                    </ul>
+                </li>
+                
+                <li>
+                    <h4>About</h4>
+                    <ul>
+                        <li>
+                        	<p style="margin: 0;">City bus searching system is a real time project which is useful for the people who is the facing problems with the current manual work of bus searching. City bus searching system contains all bus with their route details.  The main purpose of this software is to reduce the manual errors involved in the travel process and make it convenient for the people to manage their bus details. This project has been made simpler and interactive.  This is an android application used to find out the bus number from one place to another place.</p>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                	<h4>Search</h4>
+                    <ul>
+                    	<li>
+                            <form method="get" class="searchform" action="http://wpdemo.justfreetemplates.com/" >
+                                <p>
+                                    <input type="text" size="22" value="" name="s" class="s" />
+                                    <input type="submit" class="searchsubmit formbutton" value="Search" />
+                                </p>
+                            </form>	
+						</li>
+					</ul>
+                </li>
+                
+              
+                    
+                
+            </ul> 
+        </div>
+    	<div class="clear"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer-content">
+    	<div class="footer-width">
+
+            <span class="sitename">City bus </span>
+                <p class="footer-links">
+                <a href="#">Home</a> |
+                <a href="#">About</a> |
+               
+                <a href="#">Admin</a> |
+                
+
+            </p>
+         </div>
+    </div>
+    <div class="footer-width footer-bottom">
+        <p>&copy; YourSite . <a href="#/">Free Web Templates</a> by </p>
+     </div>
+
+</div>
+        
+    </div>
+    </form>
+</body>
+</html>
