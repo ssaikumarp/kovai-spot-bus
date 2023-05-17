@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.citybussearching"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/citybusl"
+        android:label="Kovai Spot Bus"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.citybussearching.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.citybussearching.Welcome"
+            android:label="Kovai Spot Bus" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.citybussearching.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.example.citybussearching.Viewresult"
+            android:label="@string/title_activity_viewresult" >
+        </activity>
+        
+         <activity
+            android:name="com.example.citybussearching.VehicleTracking"
+            android:label="VehicleTracking" >
+        </activity>
+    </application>
+
+</manifest>
